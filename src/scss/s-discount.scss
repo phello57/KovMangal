@@ -1,0 +1,109 @@
+.section-discount {
+  width: 1500px;
+  background: linear-gradient(180deg, #ede2d4 0%, rgb(237 226 212 / 0%) 100%);
+  margin: 0 auto;
+  margin-bottom: 250px;
+  margin-top: 150px;
+  .section-inner {
+    position: relative;
+    display: flex;
+  }
+  .content {
+    &-wrapper {
+      position: relative;
+      display: flex;
+      width: 100%;
+      margin: 50px 0 50px 50px;
+    }
+    &__title {
+      width: 657px;
+      font-weight: 400;
+      font-size: 62px;
+      line-height: 68px;
+    }
+  }
+  
+}
+@media (max-width: $media-xs) {
+  .section-discount {
+    .section-inner {
+      margin-left: 20px;
+      height: 600px;
+      .content {
+        &-wrapper {
+          height: 335px;
+          width: 260px;
+        
+        }
+        &__title {
+          width: inherit;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 42px;
+        }
+      }
+      .form {
+        &__ramka-wrapper {
+          top: 250px;
+          left: 12px;
+          width: 298px;
+          height: 506px;
+          background: #EBE0D3;
+        }
+        &__wrapper {
+          margin-left: 17px;
+          margin-top: 20px;
+          
+        }
+        &__title {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 26px;
+          width: 200px;
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+          margin-bottom: 20px;
+        }
+        &__yourName-title {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 110%;
+        }
+        &__yourName-input {
+          width: 245px;
+          height: 40px;
+        }
+        &__telephone-input {
+          width: 229px;
+        }
+        &__checkbox-wrapper {
+          display: flex;
+        }
+        &__checkbox-text {
+          width: 240px;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 10px;
+          margin-top: 15px;
+          margin-left: 15px;
+        }
+        &__checkbox {
+          margin-top: 15px;
+        }
+      }
+      .messengers {
+        &__wrapper {
+          margin-left: 20px;
+        }
+        &__title {
+          margin-bottom: 10px;
+        }
+      }
+      .btn__submit {
+        width: 256px;
+        margin-left: 5px;
+      }
+    }
+  }
+}

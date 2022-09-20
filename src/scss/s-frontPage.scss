@@ -1,0 +1,125 @@
+.section-frontPage {
+  .section-inner {
+    position: relative;
+    margin-top: 90px;
+  }
+
+  margin-bottom: 180px;
+
+  &__image-wrapper {
+    width: 500px;
+    height: 653px;
+    background-color: #ebe0d3;
+    border: 9px solid white;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__image {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+}
+
+.content {
+  &-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    margin-bottom: 250px;
+  }
+
+  &__leaf {
+    position: absolute;
+    left: -35px;
+    top: 20px;
+  }
+
+  &__title {
+    font-family: ViaodaLibre, sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 82px;
+  }
+
+  &__img {
+    position: absolute;
+  }
+}
+
+.achivements {
+  &-wrapper {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: $media-xs) {
+  .section-frontPage {
+    height: 850px;
+    &__image-wrapper {
+      transform: scale(0.6);
+      left: -130px;
+      top: 420px;
+    }
+    .section-inner {
+      margin-left: 52px;
+      &__title {
+        margin-top: 0;
+        width: 217px;
+        height: 74px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 10px;
+      }
+    }
+    .content {
+      &__title {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 42px;
+        width: 303px;
+        height: 172px;
+        
+      }
+    }
+    .achivements{
+      &-wrapper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin-bottom: 30px;
+      }
+      &__item  {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+

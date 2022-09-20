@@ -1,0 +1,25 @@
+footer.section-footer.section-outer
+  .section-inner
+    .section-inner__title С нами быстро, удобно и легко связаться
+    .l-contacts
+      .l-contacts__title Контакты
+      .l-contacts__wrapper
+        .l-phone
+          .l-phone__title Телефон
+          +geolocation
+        .l-messengers
+          .l-messengers__title Мессенджеры
+          .l-messengers__wrapper
+            a(href="#").l-messengers__item
+              svg.svg__telegaColor
+                use(aria-label="viberBlack" xlink:href="images/icons/icons.svg#telegaColor")
+              .l-messengers__subtitle Telegram
+            a(href="#").l-messengers__item
+              svg.svg__whatsupColor
+                use(aria-label="viberBlack" xlink:href="images/icons/icons.svg#whatsupColor")
+              .l-messengers__subtitle WhatsUp
+            a(href="#").l-messengers__item
+              svg.svg__viberColor
+                use(aria-label="viberBlack" xlink:href="images/icons/icons.svg#viberColor")
+              .l-messengers__subtitle Viber
+    +form

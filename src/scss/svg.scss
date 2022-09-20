@@ -1,0 +1,129 @@
+.svg {
+  // === Header ===
+  &__logo {
+    width: 44px;
+    height: 73px;
+  }
+
+  &__phone {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__whatsupBlack {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__telega {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__viberBlack {
+    width: 20px;
+    height: 20px;
+  }
+  &__decorForBtn-reverse {
+    position: absolute;
+    width: 20px;
+    height: 38px;
+    top: 0;
+    left: -3px;
+    transform: rotate(180deg);
+  }
+  &__decorForBtn {
+    position: absolute;
+    width: 20px;
+    height: 38px;
+    top: 0;
+    right: -3px;
+  }
+
+  &__decorForBigBtn-reverse {
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: 0;
+    left: -3px;
+    transform: rotate(180deg);
+  }
+  &__decorForBigBtn {
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: 0;
+    right: -3px;
+  }
+  // === FrontPage
+  &__medal {
+    width: 27px;
+    height: 27px;
+  }
+  &__cash {
+    width: 27px;
+    height: 27px;
+  }
+  &__armor {
+    width: 27px;
+    height: 27px;
+  }
+  &__leaf {
+    width: 30px;
+    height: 30px;
+  }
+  // === AboutUs
+  &__logoBigBlack {
+    height: 529px;
+    width: 320px;
+  }
+  // === Pokraska 
+  &__burn {
+    width: 20px;
+    height: 20px;
+  }
+  // === profit
+  &__logoBigWhite {
+    width: 300px;
+    height: 500px;
+  }
+  // === Assortment
+  &__assortment-line1 {
+    z-index: -1;
+    width: 1000px;
+    height: 1000px;
+  }
+  &__assortment-line2 {
+    z-index: -1;
+  }
+  // === Slider
+  &__arrow {
+    position: absolute;
+    width: 26px;
+    height: 22px;
+    top: 17px;
+    left: 16px;
+  } 
+  &__arrow-reverse {
+    position: absolute;
+    width: 26px;
+    height: 22px;
+    transform: rotate(180deg);
+    top: 17px;
+    left: 16px;
+  } 
+  
+  // === Footer
+  &__telegaColor {
+    width: 34px;
+    height: 28px;
+  }
+  &__whatsupColor {
+    width: 34px;
+    height: 34px;
+  }
+  &__viberColor {
+    width: 34px;
+    height: 33px;
+  }
+}

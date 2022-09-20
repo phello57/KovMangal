@@ -1,0 +1,125 @@
+.form {
+  &__ramka-wrapper {
+    position: absolute;
+    top: -150px;
+    right: 150px;
+    width: 416px;
+    height: 549px;
+    background-color: $color-background;
+    border: 7px solid #FFFFFF;
+    &--low {
+      height: 385px;
+    }
+  }
+  &__wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    margin-top: 35px;
+  }
+  &__title {
+    font-family: ViaodaLibre;
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    margin-right: 48px;
+  }
+  &__yourName-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  &__yourName-title {
+    margin-bottom: 9px;
+  }
+  &__yourName-input {
+    width: 298px;
+    height: 40px;
+    background-color: #EBE0D3;
+    opacity: 0.5;
+    border: none;
+    background-color: #FFFFFF;
+    padding-left: 12px;
+    ::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 110%;
+      color: #000000;
+      opacity: 0.4;
+    }
+  }
+  &__choise-messenger {
+    color: #4CAF50;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    margin-bottom: 9px;
+    margin-top: 10px;
+  }
+  &__telephone-input {
+    width: 278px;
+    height: 40px;
+    background-color: #EBE0D3;
+    opacity: 0.5;
+    border: none;
+    background-color: #FFFFFF;
+    padding-left: 32px;
+    margin-bottom: 20px;
+  }
+  &__telephone-input-wrapper {
+    position: relative;
+  }
+  &__seven-span {
+    position: absolute;
+    left: 7px;
+    top: 13px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  &__checkbox-wrapper {
+    display: flex;
+  }
+  &__checkbox {
+    width: 16px;
+    height: 16px;
+  }
+  &__checkbox-text {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 28px;
+  }
+}
+.messengers {
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 224px;
+    :hover {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+    }
+  }
+  &__title {
+    
+    margin-bottom: 19px;
+  }
+  &__item {
+    padding-top: 9px;
+    width: 75px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+  }
+}

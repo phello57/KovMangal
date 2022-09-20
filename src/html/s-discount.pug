@@ -1,0 +1,52 @@
+section.section-discount.section-outer 
+  .section-inner
+    .content-wrapper
+      .content__leaf 
+        svg.svg__leaf
+          use(xlink:href="images/icons/icons.svg#leaf") 
+      .content__title Посмотрите каталог и <span style="color: red;">получите  скидку до 30%</span> на Ваш первый заказ
+    .form__ramka-wrapper
+      form.form__wrapper(action="")
+        .form__title Укажите ваши контактные данные
+        .form__yourName-wrapper
+          .form__yourName-title Ваше имя
+          input.form__yourName-input(type="text" name="name" placeholder="Имя" required)
+        .messengers__title Удобный метод связи
+        .messengers__wrapper
+          .messengers__item
+            svg.svg__telegaColor
+              use(aria-label="viberBlack" xlink:href="images/icons/icons.svg#telegaColor")
+            .messengers__subtitle Telegram
+          .messengers__item
+            svg.svg__whatsupColor
+              use(aria-label="viberBlack" xlink:href="images/icons/icons.svg#whatsupColor")
+            .messengers__subtitle WhatsUp
+          .messengers__item
+            svg.svg__viberColor
+              use(aria-label="viberBlack" xlink:href="images/icons/icons.svg#viberColor")
+            .messengers__subtitle Viber
+        .form__choise-messenger.js-form__messenger WhatsUp
+        .form__telephone-input-wrapper
+          input.form__telephone-input(type="tel" name="phone" required)
+          span.form__seven-span +7 |
+        button.btn__submit ОТПРАВИТЬ
+          svg.svg__decorForBigBtn
+            use(xlink:href="images/icons/icons.svg#decorForBtn")
+          svg.svg__decorForBigBtn-reverse
+            use(xlink:href="images/icons/icons.svg#decorForBtn")
+        .form__checkbox-wrapper 
+          <input class="form__checkbox"id="html" type="checkbox">
+          .form__checkbox-text Я ознакомлен с условиями политики конфиденциальности
+          
+
+
+
+
+
+
+
+
+
+
+
+    

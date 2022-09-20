@@ -1,0 +1,106 @@
+.section-faq {
+  height: fit-content;
+  .section-inner {
+    margin-bottom: 350px;
+  }
+  .content {
+    &__title {
+      font-size: 62px;
+    }
+    &-wrapper {
+      margin-bottom: 10px;
+    }
+  }
+} 
+details{
+  display:block;
+  width:100%;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 1.5rem;
+  p {
+    background-color: #DAC9BC;
+    padding: 27px;
+    max-height: fit-content;
+  }
+}
+summary {
+   display:inline-block;
+   padding: .3em 1em .3em .9em;
+   font-size:1.4em;
+   cursor: pointer;
+   position: relative;
+}
+summary:before {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  top: .1em;
+  right: -970px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+  background-color: #e7d0b4;
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+details[open] > summary:before {
+  transform: scale(1,-1);
+  background-color: red;
+
+}
+summary ~ * {
+   padding: 0 1em 10px 1.4em;
+   
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}  
+}
+@media (max-width: $media-xs) {
+  .section-faq {
+    &__image-wrapper {
+      display: none;
+      position: absolute;
+    }
+    .section-inner {
+      margin-left: 22px;
+      margin-right: 32px;
+      
+      &__title {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 34px;
+        margin-left: 22px;
+      }
+      .faq__wrapper {
+        margin-right: 50px;
+        summary {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 120%;
+          
+        }
+        summary:before {
+          background-color: #EBE0D3;
+        }
+      }
+    }
+    .content {
+      &__title {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 42px;
+        margin-left: 22px;
+      }
+      &__leaf {
+        left: -10px;
+        top: 9px;
+      }
+    }
+  }
+}
+

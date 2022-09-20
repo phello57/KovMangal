@@ -1,0 +1,10 @@
+@mixin hover-icons {
+  transform: scale(1.1);
+  overflow: visible;
+  transition: $transition;
+}
+@mixin hover-btn {
+  color: $color-primary;
+  background-color: #fff;
+  transition: $transition;
+}

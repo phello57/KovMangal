@@ -1,0 +1,157 @@
+body {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  line-height: 28px;
+  background-color: rgb(238, 235, 232);
+  margin: 0;
+}
+
+.section-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+
+  &--wide {
+    max-width: 1600px;
+  }
+
+  &__title {
+    font-family: MadelynFill, sans-serif;
+    color: $color-primary;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 28px;
+  }
+}
+
+.section-outer {
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+.dash-underline {
+  border-bottom: 2px solid #000;
+}
+.btn {
+  &__primary {
+    font-family: Gilroy;
+    position: relative;
+    background-color: $color-primary;
+    height: 50px;
+    width: 186px;
+    border: 1px solid #ef3e16;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    color: $color-btn-text;
+    overflow: hidden;
+    text-transform: uppercase;
+    &:hover {
+      @include hover-btn;
+    }
+  }
+  // === Header ===
+  &__menu {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Gilroy;
+    font-style: normal;
+    line-height: 110%;
+    display: flex;
+    width: 102px;
+    height: 44px;
+  }
+
+  &__menu-dash-wrapper {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__menu-dash {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &__menu-dash--longer {
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 6px;
+  }
+
+  &__geolocation-number {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 44px;
+  }
+
+  &__catalog-wrapper {
+    position: relative;
+    background-color: $color-primary;
+    height: 40px;
+    width: 150px;
+    border: 1px solid #ef3e16;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    color: $color-btn-text;
+    overflow: hidden;
+    
+
+    &:hover {
+      @include hover-btn;
+    }
+  }
+
+  &__geolocation-city {
+    margin-right: 10px;
+    font-size: 16px;
+    text-decoration: underline;
+    color: $color-primary;
+  }
+  &__submit {
+    width: 320px;
+    height: 50px;
+    background-color: #EF3E16;
+    position: relative;
+    color: #ffffff;
+    &:hover {
+      @include hover-btn;
+    }
+  }
+  &__slider-next {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #151515;
+    border-radius: 50px;
+    position: relative;
+    :hover {
+      
+    }
+  }
+  &__slider-prev {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #151515;
+    border-radius: 50px;
+    position: relative;
+    :hover {
+      
+    }
+  }
+  
+}

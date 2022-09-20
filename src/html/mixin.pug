@@ -1,0 +1,58 @@
+// используется в header`e и footer
+mixin geolocation 
+  .l-geolocation 
+    // button.btn__geolocation-city Москва
+    svg.svg__phone
+        use(aria-label="phone" xlink:href="images/icons/icons.svg#phone")
+    button.btn__geolocation-number +7 999 888 77 66
+
+mixin btn-primary (text)
+  button.btn__primary= text
+    svg.svg__decorForBigBtn
+        use(xlink:href="images/icons/icons.svg#decorForBtn")
+    svg.svg__decorForBigBtn-reverse
+        use(xlink:href="images/icons/icons.svg#decorForBtn")
+
+mixin form 
+  .form__ramka-wrapper.form__ramka-wrapper--low
+      form.form__wrapper(action="")
+        .form__title Оставьте контакты и мы свяжемся с Вами
+        .form__yourName-wrapper
+          .form__yourName-title Ваше имя
+          input.form__yourName-input(type="text" placeholder="Имя")
+        .form__telephone-input-wrapper
+          input.form__telephone-input(action="")
+          span.form__seven-span +7 |
+        button.btn__submit ОТПРАВИТЬ
+          svg.svg__decorForBigBtn
+            use(xlink:href="images/icons/icons.svg#decorForBtn")
+          svg.svg__decorForBigBtn-reverse
+            use(xlink:href="images/icons/icons.svg#decorForBtn")
+        .form__checkbox-wrapper 
+          checkbox.form__checkbox
+          .form__checkbox-text Я ознакомлен с условиями 
+          a.form__checkbox-text(href="#") политики конфиденциальности
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
